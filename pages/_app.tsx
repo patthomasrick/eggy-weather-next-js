@@ -1,5 +1,5 @@
 import { StrictMode, useEffect, useMemo, useState } from "react";
-import { WeatherContext } from "../library/components/Context";
+import { WeatherContext } from "../library/Context";
 import { Forecast } from "../library/types/Forecast";
 import { fetchBasicForecast } from "../library/WeatherService";
 import "../style/global.scss";

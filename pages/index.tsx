@@ -1,6 +1,6 @@
 import React from "react";
 import { Component } from "react";
-import { WeatherContext } from "../library/components/Context";
+import { WeatherContext } from "../library/Context";
 import Head from "../library/components/head";
 import Loading from "../library/components/loading";
 import NavBar from "../library/components/navbar";

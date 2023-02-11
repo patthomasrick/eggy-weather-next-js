@@ -2,7 +2,7 @@ import React from "react";
 import { useEffect } from "react";
 import { Component } from "react";
 import { Period } from "../../types/Forecast";
-import { WeatherContext } from "../Context";
+import { WeatherContext } from "../../Context";
 import WeatherCard from "./WeatherCard";
 
 const DAY_IN_MILLISECONDS = 86400000;

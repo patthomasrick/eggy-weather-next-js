@@ -1,5 +1,5 @@
 import { createContext } from "react";
-import { Forecast } from "../types/Forecast";
+import { Forecast } from "./types/Forecast";
 
 export type WeatherContextType = {
   loading: boolean;
