@@ -19,11 +19,11 @@ export interface Geometry {
 }
 
 export interface Properties {
-  updated: Date;
+  updated: string;
   units: string;
   forecastGenerator: string;
-  generatedAt: Date;
-  updateTime: Date;
+  generatedAt: string;
+  updateTime: string;
   validTimes: string;
   elevation: Elevation;
   periods: Period[];
@@ -43,8 +43,8 @@ export enum UnitCode {
 export interface Period {
   number: number;
   name: string;
-  startTime: Date;
-  endTime: Date;
+  startTime: string;
+  endTime: string;
   isDaytime: boolean;
   temperature: number;
   temperatureUnit: TemperatureUnit;

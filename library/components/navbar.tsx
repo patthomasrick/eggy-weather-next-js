@@ -1,4 +1,5 @@
 import Link from "next/link";
+import React from "react";
 import { Component } from "react";
 
 export default class NavBar extends Component {
