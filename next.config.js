@@ -4,7 +4,7 @@
  * @type {import('next').NextConfig}
  **/
 const nextConfig = {
-  basePath: '/gh-pages-test',
-}
+  basePath: "/eggy-weather-next-js",
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
