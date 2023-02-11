@@ -2,6 +2,7 @@ import { Component } from "react";
 import { WeatherContext } from "../library/components/context";
 import Head from "../library/components/head";
 import Loading from "../library/components/loading";
+import NavBar from "../library/components/navbar";
 
 export default class Home extends Component {
   static contextType = WeatherContext;
@@ -11,13 +12,20 @@ export default class Home extends Component {
     return (
       <>
         <Head title="Weather" />
+        <NavBar></NavBar>
         <section className="section">
-          <div className="container">
-            <h1 className="title">Hello World</h1>
-            <div className="subtitle">
-              <div>{this.context.loading ? <Loading /> : <p>Loaded!</p>}</div>
+          {this.context.loading ? (
+            <Loading />
+          ) : (
+            <div className="container">
+              <h1 className="title">Hello World</h1>
+              <div className="subtitle">
+                <div>
+                  <p>Loaded!</p>
+                </div>
+              </div>
             </div>
-          </div>
+          )}
         </section>
       </>
     );
