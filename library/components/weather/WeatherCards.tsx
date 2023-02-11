@@ -40,8 +40,12 @@ export default class WeatherCards extends Component<{}> {
 
     return (
       <div className="columns">
-        {days?.map((periods, index) => {
-          return <div className="column"><WeatherCard periods={periods} /></div>;
+        {days?.map((periods) => {
+          return (
+            <div className="column" key={`periods-${periods[0].startTime}`}>
+              <WeatherCard periods={periods} />
+            </div>
+          );
         })}
       </div>
     );

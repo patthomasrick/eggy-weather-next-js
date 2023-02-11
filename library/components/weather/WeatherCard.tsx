@@ -9,7 +9,12 @@ export default class WeatherCard extends Component<{ periods: Period[] }> {
       <div className="card">
         <div className="card-content">
           {this.props.periods.map((period) => {
-            return <WeatherPeriod period={period} />;
+            return (
+              <WeatherPeriod
+                key={`period-${period.startTime}`}
+                period={period}
+              />
+            );
           })}
         </div>
       </div>
