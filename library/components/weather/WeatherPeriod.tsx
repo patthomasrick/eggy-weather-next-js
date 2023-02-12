@@ -10,11 +10,9 @@ export default class WeatherPeriod extends Component<{ period: Period }> {
           <b>{this.props.period.name}</b>
         </p>
         <p>
-            {this.props.period.temperature}° {this.props.period.temperatureUnit}
+          {this.props.period.temperature}° {this.props.period.temperatureUnit}
         </p>
-        <p>
-            {this.props.period.shortForecast}
-        </p>
+        <p>{this.props.period.shortForecast}</p>
       </div>
     );
   }

@@ -27,7 +27,10 @@ async function getForecastNode(lat: number, lon: number) {
   return await response.json();
 }
 
-export async function fetchBasicForecast(lat: number, lon: number): Promise<Forecast> {
+export async function fetchBasicForecast(
+  lat: number,
+  lon: number
+): Promise<Forecast> {
   // Get data as JSON.
   const head_json = await getForecastNode(lat, lon);
 

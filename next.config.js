@@ -5,8 +5,8 @@
  **/
 const nextConfig = {
   images: { unoptimized: true },
-  experimental: {  },
-  basePath: "/eggy-weather-next-js",
+  experimental: {},
+  basePath: "",
 };
 
 module.exports = nextConfig;
